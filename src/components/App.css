@@ -1,0 +1,60 @@
+.App {
+  text-align: center;
+}
+
+.centerAlign {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.mrIcon {
+  margin-right: 10px !important;
+}
+
+/* Products view */
+.products-list {
+  margin-top: 1.5em;
+}
+
+.panel img {
+  width: 100%;
+}
+.top-panel {
+  font-size: 16px;
+  font-weight: bold;
+}
+.top-panel.title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* override bs panel-body */
+.panel .panel-body {
+  padding: 0 15px 15px;
+}
+
+.panel-body .product-desc {
+  overflow: hidden;
+  position: relative;
+  line-height: 1.2em;
+  max-height: 3.6em;
+  margin-right: -1em;
+  padding-right: 1em;
+}
+
+.panel-body .product-desc::before {
+  content: "...";
+  position: absolute;
+  right: 15px;
+  bottom: 0;
+}
+
+.panel-body .product-desc::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  background: white;
+}
